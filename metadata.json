@@ -1,0 +1,5 @@
+{
+  "name": "Mediterranean Boho Showroom Generator",
+  "description": "A high-fidelity interior design generator for a Mediterranean-Boho-Vintage maximalist showroom. Features customizable camera angles and lens types using Gemini's advanced image generation models.",
+  "requestFramePermissions": []
+}

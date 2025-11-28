@@ -29,16 +29,16 @@ export type LightingOption =
   | 'Mixed Lighting';
 
 export interface RoomConfig {
-  aspectRatio: AspectRatio;
-  lens: string; // ID of the lens
-  angle: number; // 1.0, 1.5, 2.0, etc.
-  cameraHeight: number; // 1-10
-  lighting: LightingOption[];
-  rugScale: number; // 1-10
-  extraPrompt: string;
-  rugImages: string[]; // Array of base64 strings
-  roomReferenceImage: string | null; // Base64 string of the room to keep consistent
-  referenceImageAngle: number; // Angle of the uploaded reference
+  rugImages: string[];           // base64 PNG string listesi
+  roomReferenceImage: string | null; // base64 PNG
+  referenceImageAngle: number;   // referans foto açısı (1.0, 1.5 vs)
+  angle: number;                 // yeni istenen açı
+  cameraHeight: number;          // 1–10
+  aspectRatio: string;           // "1:1" vb
+  lens: string;                  // LENS_OPTIONS içindeki id
+  lighting: string[];            // LIGHTING_OPTIONS içinden seçilenler
+  rugScale: number;              // 1–10
+  extraPrompt: string;           // kullanıcı serbest prompt
 }
 
 export interface Preset {
